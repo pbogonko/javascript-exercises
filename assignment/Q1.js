@@ -10,7 +10,7 @@ A+--->89-100 && final
 
 
 //Q1
-let test=5;
+let test=Math.floor(Math.random(),10);
 let num;
 
 do{

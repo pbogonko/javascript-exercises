@@ -3,11 +3,11 @@ const mystr=new String(' this is a string');
 console.log(mystr)//returns the String object 
 console.log(mystr.valueOf())//returns the value of the String object
 //sup -->converts the given html text to subscript by enclosing it within the <sub></sub> tag
-// const mytext=document.getElementById('sub').innerHTML;
-// mytext.sub();
-// //sup-->converts the given html text to superscript
-// const mytext2=document.getElementById('sup').innerHTML;
-// mytext.sup();
+const mytext=document.getElementById('sub').innerHTML;
+mytext.sub();
+//sup-->converts the given html text to superscript
+const mytext2=document.getElementById('sup').innerHTML;
+mytext.sup();
 //split
 
 const myname='polycarp'

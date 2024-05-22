@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla's caculator</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            min-width: 30%;
+            row-gap: 1em;
+            justify-content: center;
+            box-shadow: 2px 4px 8px grey;
+            border-radius: 1em;
+          
+
+
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            
+            background-color: rgba(128, 128, 128, 0.219);
+            opacity: 0.8;
+            padding: 2em;
+            row-gap: 1em;
+
+        }
+
+        input {
+            padding: 0.8em;
+            border-radius: 0.5em;
+            border: none;
+            box-shadow: 2px 2px 8px #726a6a;
+
+
+        }
+
+        .amount {
+            display: flex;
+            align-self: flex-end;
+            padding: 2em;
+        }
+
+        h3 {
+            text-align: center;
+            color: #1b1a1a;
+            opacity: 0.8;
+        }
+
+        label {
+            font-weight: bolder;
+        }
+        .head{
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <h3 class="head">VANILLAS CALCULATOR</h3>
+
+        <form action="" method="post">
+            <label for="price">Price</label>
+            <input type="text" name="price" id="price" placeholder="price" onchange="change()">
+            <label for="price">quantity</label>
+            <input type="text" name="quantity" id="quantity" placeholder="quantity" onchange="change()">
+            <div class="amount" id="amount"></div>
+        </form>
+
+
+
+    </div>
+
+
+
+
+    <script>
+        function change() {
+            const price = document.getElementById('price').value;
+            const quantity = document.getElementById('quantity').value;
+            const amt = price * quantity;
+            document.getElementById('amount').textContent = `$-${amt}`
+        }
+
+
+
+    </script>
+</body>
+
+</html>

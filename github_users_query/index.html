@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>github api</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: #103a28;
+
+        }
+        h2{
+            color: #ffcc;
+        }
+        input{
+            padding: 1em;
+            border-radius: 0.5em;
+            box-shadow: 2px 2px 1px  #291d26;
+            border: none;
+            padding-left: 3em;
+           
+        }
+      .main{
+        display: flex;
+        flex-direction: column;align-items: center;
+      }
+
+        img {
+            width: 200px;
+            border: 2px solid rgb(184, 199, 184);
+            height: 200px;
+            border-radius: 50%;
+        }
+        .user{
+          position: fixed;
+          padding: 2em;
+         
+        }
+        .user h2,h3{
+            margin-left: 5em;
+        }
+        button{
+            margin-left: 2em;
+            padding: 1em;
+            font-size: 1em;
+            background-color: #291d26;
+            color: white;
+            border: none;
+            border-radius: 0.5em;
+        }
+        .input{
+            display: flex;
+        }
+        h3{
+            color: white;
+        }
+      
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+       
+        <div class="search"></div>
+            <h2 class="title">GITHUB SEARCH TOOL</h2>
+            <div class="input">
+                <input type="search" name="search" id="search">
+                <button>Search query</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="user">
+        <img src="" alt="">
+        <h2 id="name">alamin magoti</h2>
+        <h2 id="email">email</h2>
+        <h3 id="created_at">created at</h3>
+
+    </div>
+
+
+    <script src="./index.js"></script>
+
+</body>
+
+</html>

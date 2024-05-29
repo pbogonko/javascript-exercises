@@ -1,0 +1,2 @@
+this text was written to the file
+ this text was appended to  the already existing data 1

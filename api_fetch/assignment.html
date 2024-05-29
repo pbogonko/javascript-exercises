@@ -181,6 +181,7 @@ const dt=[
 
 const AddedDataJSON=[]
 async function addProducts(file){
+ 
     
     // let fetchdata=await fetch(file);
     
@@ -189,6 +190,17 @@ async function addProducts(file){
     })
 }
 //add products to DOM
+   const AddDataToJson=[]
+        async function fetchdata(data){
+    return new Promise((resolve)=>{
+        setTimeout(()=>{
+            AddDataToJson.push(data);
+            resolve()
+        },30)
+    })
+   
+    
+}
 addProducts(dt)
 const main=document.createElement('main');
     main.className='main'
@@ -304,7 +316,7 @@ function deleteProductFromCart(id){
     const prod=document.getElementById(id)
     const cart=document.querySelector('.cart');
     if(id){
-        cart.removeChild(prod);
+        cart.removeChild(prod)
     }
 }
 

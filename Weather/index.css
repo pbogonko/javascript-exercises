@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    font-family: Montserrat;
+    background-size: cover;
+    font-weight: 600;
+    background-color: #f0f8ff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./images/c8ba30ee61944cc26dbde4022a0a4b72.gif' );
+}
+.searchbar{
+    width:50vw;
+    height: 3em;
+    border-radius: 2rem;
+    margin: 2rem;
+    border: none;
+}
+.main{
+    width: 60%;
+    height: 60%;
+    background-color: #ffffffb9;
+    border-radius: .5em;
+    display: flex;
+    padding: 2rem;
+    justify-content: space-around;
+    padding: 2em;
+}
+.img{
+    height: 100%;
+   
+    display: flex;
+   
+}
+img{
+    width: 80%;
+    height: 50%;
+    margin-top: 2em;
+    
+
+}
+.btn{
+    background-color:#b3ebda;
+    border: none;
+    border-radius: 2em;
+    padding: 1em;
+    color: #000000ab;
+}
+.btn:hover{
+    background-color: #b3ebdab0;
+}
+.weather{
+    width: 90px;
+    height: 90px;
+}
+.week-days img{
+    width: 50px;
+    height: auto;
+}
+.week-days{
+    display: flex;
+    margin-right: 2rem;
+    width: 60%;
+    
+    position:relative;
+    top:-15%;
+  
+  
+   
+}
+.day2,.day3,.day4,.day5{
+    background-color: #ffffff88;
+
+     flood-opacity: 0%;
+     padding-left: 3em;
+     padding-right: 3em;
+    border-radius: 2.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-left: 2rem;
+    box-shadow: 2px 2px 2px #ffffffea;
+    
+    
+   
+}
+
+.city{
+font-size: 2rem;    
+}
+input{
+    font-size: 1.3em;
+    padding-left: 2rem;
+}
+.data{
+display: flex;
+flex-direction: column;
+row-gap: 1rem;
+}
+.temp,.degrees, .description{
+    color: hsl(240, 79%, 38%);
+}
